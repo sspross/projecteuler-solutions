@@ -1,1 +1,1 @@
-My solutions for the [Project Euler](http://projecteuler.net/) problems.
+My solutions for the [Project Euler](http://projecteuler.net/) problems written in Python.
