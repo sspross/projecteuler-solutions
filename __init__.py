@@ -11,6 +11,11 @@ class ProblemTests(unittest.TestCase):
         from problem_2 import func
         self.assertEqual(func(4000000), 4613732)
 
+    def test_problem_3(self):
+        from problem_3 import func
+        self.assertEqual(func(13195), 29)
+        self.assertEqual(func(600851475143), 6857)
+
 
 if __name__ == '__main__':
     unittest.main()
