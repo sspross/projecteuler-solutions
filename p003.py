@@ -5,7 +5,7 @@ def is_prime(num):
         if num % v == 0:
             return False
     return True
-     
+
 
 def primes():
     counter = 0
