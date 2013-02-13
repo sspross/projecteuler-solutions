@@ -1,21 +1,23 @@
-def is_prim(num):
+def is_prime(num):
     if num < 2:
         return False
-    for n in xrange(2, int(num ** 0.5) + 1):
-        if num % n == 0:
-            return False 
+    for v in range(2, num):
+        if num % v == 0:
+            return False
     return True
+     
 
-def prims_inverse(start):
-    num = start
+def primes():
+    counter = 0
     while True:
-        if is_prim(num):
-            yield num
-        num -= 1
+        if is_prime(counter):
+            yield counter
+        counter += 1
+
 
 def func(num):
-    if num < 2:
-        return None
-    for prim in prims_inverse(int(num ** 0.5) + 1):
+    for prim in primes():
         if num % prim == 0:
-            return prim
+            num = num / prim
+            if num <= 2:
+                return prim
