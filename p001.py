@@ -10,4 +10,4 @@ def nums(below):
 
 
 def func(below):
-    return sum(set([num for num in nums(below)]))
+    return sum(set(nums(below)))
