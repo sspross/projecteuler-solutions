@@ -1,11 +1,11 @@
 def func(size):
-    # http://mathworld.wolfram.com/LatticePath.html
     if not size:
         return 0
     return binomial_coefficient(size + size, size)
 
 
 def binomial_coefficient(n, k):
+    # http://mathworld.wolfram.com/LatticePath.html
     return factorial(n) / (factorial(n - k) * factorial(k))
 
 
