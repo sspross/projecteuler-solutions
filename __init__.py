@@ -25,6 +25,16 @@ class ProblemTests(unittest.TestCase):
         self.assertEqual(func(13195), 29)
         self.assertEqual(func(600851475143), 6857)
 
+    def test_problem_15(self):
+        from p015 import factorial, func
+        self.assertEqual(factorial(0), 1)
+        self.assertEqual(factorial(1), 1)
+        self.assertEqual(factorial(2), 2)
+        self.assertEqual(factorial(3), 6)
+        self.assertEqual(func(0), 0)
+        self.assertEqual(func(1), 2)
+        self.assertEqual(func(2), 6)
+        self.assertEqual(func(20), 137846528820)
 
 if __name__ == '__main__':
     unittest.main()
